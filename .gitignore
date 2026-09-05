@@ -1,0 +1,86 @@
+# Root .gitignore — SIH-189
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# ── Testing / Coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints
+
+# ── SQLite runtime database ───────────────────────────────────────────────────
+# The database is auto-seeded on startup from seed_data.py.
+# It should NOT be committed; each environment generates its own.
+backend/criminal_network.db
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Anomaly ground-truth (generated at runtime by seed_data.py) ───────────────
+backend/data/anomaly_ground_truth.json
+
+# ── Frontend build output ─────────────────────────────────────────────────────
+frontend/dist/
+frontend/dist-ssr/
+frontend/node_modules/
+
+# ── Editor / OS ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Secrets / environment ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+
+# ── Temporary / scratch files ─────────────────────────────────────────────────
+debug_*.py
+scratch_*.py
+tmp/
+.tmp/

@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+spacy==3.7.4
+rapidfuzz
+networkx
+scikit-learn
+numpy
+pydantic
+python-multipart
